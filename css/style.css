@@ -1,62 +1,47 @@
-/* Enter your Styles below! */
+/* font-family: 'IBM Plex Mono', monospace; */
 
-body { 
-	font-family: Helvetica, sans-serif;
-	font-size: 16px;
-	 }
-
-h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
+h1 .homepage {
+	font-family: 'IBM Plex Mono', monospace;
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 60px;
+	font-family: 'Coiny', cursive;
+	padding: 30px;
+	position: right;
 }
 
-h2 {
-	font-size: 36px;
+p {
+	font-family: 'IBM Plex Mono', monospace;
 }
-
-h3 {
-	font-size: 28px;
+img {
+	height: 300px;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
 }
-h4 {
-	font-size: 24px;
-}
-
-blockquote {
-	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
-}
-
-header {margin-bottom: 20px;}
-
-/* ensures that your images stretch the width of their containers */
-img { width: 100%; }
-
-a { 
-	color: red;
-	text-decoration: none;
-	 }
-a:hover { color: black; }
-
-.grid {
+.dogheads {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 40px;
-	width: 60%;
-	margin: auto;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 100px;
 }
 
-.grid div {
-	background-color: #ccc;
-	padding: 20px;
+img .dogheads {
+	vertical-align: center;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) {}
 
+@media only screen and (min-width:1224px) {}
+
+/* KERMIT PAGE */
+.kermit {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 }
-
-@media only screen and (min-width:1224px) {
-
+.kermheads {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
