@@ -11,6 +11,11 @@ h1 {
 	position: right;
 }
 
+h2{
+	font-size: 30px;
+	font-family: 'IBM Plex Mono', monospace;
+	font-style: italic;
+}
 p {
 	font-family: 'IBM Plex Mono', monospace;
 }
@@ -44,4 +49,15 @@ img .dogheads {
 .kermheads {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+}
+.kermywiggle {
+	animation-name: wiggle;
+	animation-duration: 3s;
+}
+@keyframes wiggle {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(-20deg); }
+	50% { transform: rotate(20deg); }
+	75% { transform: rotate(-20deg); }
+	100% { transform: rotate(0deg); }
 }

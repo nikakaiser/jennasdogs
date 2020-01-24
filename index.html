@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -20,10 +20,10 @@
 
 	<main>
 	<div class="dogheads">
-		<a href="marbles.html"><img src= "images/marblehead.png" alt="marblehead"></a>
-		<a href="kermit.html"><img src= "images/kermithead.png" alt="kermithead"></a>
-		<a href="peach.html"><img src= "images/peachhead.png" alt="peachhead"></a>
-		<a href="bunny.html"><img src= "images/bunnyhead.png" alt="bunnyhead"></a>
+		<div class="marblehead"><a href="marbles.html"><img src= "images/marblehead.png" alt="marblehead"></a></div>
+		<div class="kermithead"><a href="kermit.html"><img src= "images/kermithead.png" alt="kermithead"></a></div>
+		<div class="peachhead"><a href="peach.html"><img src= "images/peachhead.png" alt="peachhead"></a></div>
+		<div class="bunnyhead"><a href="bunny.html"><img src= "images/bunnyhead.png" alt="bunnyhead"></a></div>
 	</div>
 
 
@@ -36,7 +36,18 @@
   	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   	crossorigin="anonymous"></script>
 		<script>
-
+			$('.marblehead').hover(function(){
+	          $('.marblehead').toggleClass('kermywiggle')
+	        })
+			$('.kermithead').hover(function(){
+			      $('.kermithead').toggleClass('kermywiggle')
+			     })
+			$('.peachhead').hover(function(){
+		 			  $('.peachhead').toggleClass('kermywiggle')
+		 			 })
+			$('.bunnyhead').hover(function(){
+		 			   $('.bunnyhead').toggleClass('kermywiggle')
+		 			 })
 		</script>
 </body>
 </html>
