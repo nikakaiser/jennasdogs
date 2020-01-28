@@ -20,7 +20,9 @@
 
 	<main>
 	<div class="dogheads">
-		<div class="marblehead"><a href="marbles.html"><img src= "images/marblehead.png" alt="marblehead"></a></div>
+		<div class="marblehead"><a href = "marbles.html">
+		      <img id = "marblehead" alt = "marblehead" src = "images/marblehead.png">
+		    </a></div>
 		<div class="kermithead"><a href="kermit.html"><img src= "images/kermithead.png" alt="kermithead"></a></div>
 		<div class="peachhead"><a href="peach.html"><img src= "images/peachhead.png" alt="peachhead"></a></div>
 		<div class="bunnyhead"><a href="bunny.html"><img src= "images/bunnyhead.png" alt="bunnyhead"></a></div>
@@ -48,6 +50,18 @@
 			$('.bunnyhead').hover(function(){
 		 			   $('.bunnyhead').toggleClass('kermywiggle')
 		 			 })
+$(function(){
+			       $("#marblehead").on({
+			        mouseenter: function(){
+			         $(this).attr('src','images/marblehead-name.png');
+			       },
+			       mouseleave: function(){
+			         $(this).attr('src','images/marblehead.png');
+			       }
+			       });
+
+			     });
 		</script>
+
 </body>
 </html>
