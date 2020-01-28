@@ -23,9 +23,15 @@
 		<div class="marblehead"><a href = "marbles.html">
 		      <img id = "marblehead" alt = "marblehead" src = "images/marblehead.png">
 		    </a></div>
-		<div class="kermithead"><a href="kermit.html"><img src= "images/kermithead.png" alt="kermithead"></a></div>
-		<div class="peachhead"><a href="peach.html"><img src= "images/peachhead.png" alt="peachhead"></a></div>
-		<div class="bunnyhead"><a href="bunny.html"><img src= "images/bunnyhead.png" alt="bunnyhead"></a></div>
+		<div class="kermithead"><a href="kermit.html">
+			<img id = "kermithead" alt = "kermithead" src = "images/kermithead.png">
+		</a></div>
+		<div class="peachhead"><a href="peach.html">
+			<img id = "peachhead" alt = "peachhead" src = "images/peachhead.png">
+		</a></div>
+		<div class="bunnyhead"><a href="bunny.html">
+			 <img id = "bunnyhead" alt = "bunnyhead" src = "images/bunnyhead.png">
+		</a></div>
 	</div>
 
 
@@ -57,6 +63,30 @@ $(function(){
 			       },
 			       mouseleave: function(){
 			         $(this).attr('src','images/marblehead.png');
+			       }
+			       });
+						 $("#kermithead").on({
+			        mouseenter: function(){
+			         $(this).attr('src','images/kermithead-name.png');
+			       },
+			       mouseleave: function(){
+			         $(this).attr('src','images/kermithead.png');
+			       }
+			       });
+						 $("#peachhead").on({
+			        mouseenter: function(){
+			         $(this).attr('src','images/peachhead-name.png');
+			       },
+			       mouseleave: function(){
+			         $(this).attr('src','images/peachhead.png');
+			       }
+			       });
+						 $("#bunnyhead").on({
+			        mouseenter: function(){
+			         $(this).attr('src','images/bunnyhead-name.png');
+			       },
+			       mouseleave: function(){
+			         $(this).attr('src','images/bunnyhead.png');
 			       }
 			       });
 

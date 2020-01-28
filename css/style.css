@@ -7,8 +7,8 @@ h1 .homepage {
 h1 {
 	font-size: 60px;
 	font-family: 'Coiny', cursive;
-	padding: 30px;
-	position: right;
+	padding-right: 30px;
+	text-align: right;
 }
 
 h2{
@@ -20,7 +20,7 @@ p {
 	font-family: 'IBM Plex Mono', monospace;
 }
 img {
-	height: 300px;
+	width: 100%;
 	display: block;
 	margin-left: auto;
   margin-right: auto;
@@ -37,6 +37,12 @@ img .dogheads {
 	vertical-align: center;
 }
 
+.home-icon {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
 @media only screen and (min-width:768px) {}
 
 @media only screen and (min-width:1224px) {}
@@ -45,10 +51,16 @@ img .dogheads {
 .kermit {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+	grid-gap: 50px;
 }
 .kermheads {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr 1fr;
+}
+.kermhead4 {
+	grid-column: 1 / -1;
+	grid-row: 2 / 3;
+
 }
 .kermywiggle {
 	animation-name: wiggle;
@@ -62,6 +74,40 @@ img .dogheads {
 	100% { transform: rotate(0deg); }
 }
 
-
-
-/* EXTRA TEST */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
