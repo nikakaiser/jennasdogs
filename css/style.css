@@ -43,12 +43,22 @@ img .dogheads {
 	left: 40px;
 }
 
+.homepage {
+	background-color: rgb(235,204,93);
+}
+
 @media only screen and (min-width:768px) {}
 
 @media only screen and (min-width:1224px) {}
+/* MARBLES PAGE */
+.marbles {
+	background-color: rgb(0,177,179);
+}
+
 
 /* KERMIT PAGE */
 .kermit {
+	background-color: rgb(233,143,72);
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-gap: 50px;
@@ -60,12 +70,24 @@ img .dogheads {
 .kermhead4 {
 	grid-column: 1 / -1;
 	grid-row: 2 / 3;
+	width: 50%;
+	margin-left: 200px;
 
 }
 .kermywiggle {
 	animation-name: wiggle;
 	animation-duration: 3s;
 }
+
+/* PEACH PAGE */
+.peach {
+	background-color: rgb(237,170,134);
+}
+/* BUNNY PAGE */
+.bunny {
+	background-color: rgb(224,228,63);
+}
+/* ANIMATIONS */
 @keyframes wiggle {
 	0% { transform: rotate(0deg); }
 	25% { transform: rotate(-20deg); }
