@@ -4,9 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Peach</title>
 </head>
-<body>
-  <h1>PEACH</h1>
+<body class="peach">
+
+  <div class="homebutton"><a href="index.html">
+    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home button.svg">
+  </a></div>
+
+  <div class="peachheads">
+    <div class="peachhead4"><img src= "images/peachhead4.png" alt="peachhead4"></div>
+    <div class="peachhead2"><img src= "images/peachhead2.png" alt="peachhead2"></div>
+    <div class="peachhead5"><img src= "images/peachhead5.png" alt="peachhead5"></div>
+    <!--- <div class="kermhead4"><img src= "images/kermhead4.png" alt="kermhead4"></div> --->
+    <div class="peachhead3"><img src= "images/peachhead3.png" alt="peachhead3"></div>
+    </div>
+  <div class="content">
+    <h1>PEACH</h1>
+    <p>
+      <strong>AKA:</strong> Peachy, Weechy, Ms.Weech, Paesh, Peachy Girl, Mango<br>
+      <strong>Breed:</strong> Italian Greyhound<br>
+      <strong>Birthday:</strong> June 15, 2014<br>
+      <strong>Favorite:</strong> Eating, Jumping<br>
+      <strong>Career:</strong> Aspiring Sous-chef
+    </p>
+    <h2>Watch her as a baby!</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PSlBInQ4eR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+  $('.peachhead4').hover(function(){
+          $('.peachhead4').toggleClass('kermywiggle')
+        })
+  $('.peachhead2').hover(function(){
+          $('.peachhead2').toggleClass('hvr-pulse')
+        })
+  $('.peachhead3').hover(function(){
+          $('.peachhead3').toggleClass('hvr-buzz')
+        })
+  $('.peachhead5').hover(function(){
+          $('.peachhead5').toggleClass('hvr-wobble-horizontal')
+        })
+
+  </script>
+
 </body>
 </html>

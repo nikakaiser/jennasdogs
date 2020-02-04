@@ -4,9 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Marbles</title>
 </head>
 <body class="marbles">
-  <h1>MARBLES</h1>
+
+  <div class="homebutton"><a href="index.html">
+    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home button.svg">
+  </a></div>
+
+  <div class="marbleheads">
+    <div class="marblehead4"><img src= "images/marblehead4.png" alt="marblehead4"></div>
+    <div class="marblehead2"><img src= "images/marblehead2.png" alt="marblehead2"></div>
+    <div class="marblehead5"><img src= "images/marblehead5.png" alt="marblehead5"></div>
+    <!--- <div class="kermhead4"><img src= "images/kermhead4.png" alt="kermhead4"></div> --->
+    <div class="marblehead3"><img src= "images/marblehead3.png" alt="marblehead3"></div>
+    </div>
+  <div class="content">
+    <h1>MARBLES</h1>
+    <p>
+      <strong>AKA:</strong> Mr.Marbles, Mubble, Bob, Bobby<br>
+      <strong>Breed:</strong> Chihuaha<br>
+      <strong>Birthday:</strong> June 5, 2008<br>
+      <strong>Favorite:</strong> Spiderman shirt<br>
+      <strong>Career:</strong> is baby
+    </p>
+    <h2>Watch him learn to stand!</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bs1jHoDh5WY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+  $('.marblehead4').hover(function(){
+          $('.marblehead4').toggleClass('kermywiggle')
+        })
+  $('.marblehead2').hover(function(){
+          $('.marblehead2').toggleClass('hvr-pulse')
+        })
+  $('.marblehead3').hover(function(){
+          $('.marblehead3').toggleClass('hvr-buzz')
+        })
+  $('.marblehead5').hover(function(){
+          $('.marblehead5').toggleClass('hvr-wobble-horizontal')
+        })
+
+  </script>
+
 </body>
 </html>
