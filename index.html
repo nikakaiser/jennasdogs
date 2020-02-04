@@ -15,11 +15,10 @@
 <body class="homepage">
 
 	<header>
-		<div class="tooltip"><h1>Jenna's Dogs</h1>
-  <span class="tooltiptext"><p>Jenna Marbles is a Youtuber with four cute dogs</p><b>
-		<a href= "videos.html"> <p><strong>Best Videos ft. dogs</strong></p> </a>
-	</span>
-</div>
+
+		<h1><a href = "jenna.html"><img id="jennahead" alt="jenna's head" src="images/jennahead.png" align="left"></a>
+		Jenna's Dogs</h1>
+		<!--<a href= "videos.html"> <p><strong>Best Videos ft. dogs</strong></p> </a>-->
 		<!--<h1>Jenna's Dogs</h1>-->
 	</header>
 
@@ -61,6 +60,9 @@
 			$('.bunnyhead').hover(function(){
 		 			   $('.bunnyhead').toggleClass('hvr-pulse')
 		 			 })
+			$('#jennahead').hover(function(){
+		 		 			$('#jennahead').toggleClass('hvr-pop')
+		 		 	 })
 $(function(){
 			       $("#marblehead").on({
 			        mouseenter: function(){
