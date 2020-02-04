@@ -173,14 +173,12 @@ img .dogheads {
 	margin-left: 20px;
 }
 /* VIDEO PAGE */
-.videos {
+.videogrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 50px;
 }
-.video h1{
-	margin-bottom: 30px;
-}
+
 /* ANIMATIONS */
 @keyframes wiggle {
 	0% { transform: rotate(0deg); }
