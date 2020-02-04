@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Kermit</title>
 </head>
 <body class="kermit">
-  <img class="home-icon">
+
+  <div class="homebutton"><a href="index.html">
+    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home button.svg">
+  </a></div>
+
   <div class="kermheads">
     <div class="kermhead1"><img src= "images/kermithead.png" alt="kermhead1"></div>
     <div class="kermhead2"><img src= "images/kermithead2.png" alt="kermhead2"></div>
     <div class="kermhead3"><img src= "images/kermhead3png.png" alt="kermhead3"></div>
-    <div class="kermhead4"><img src= "images/kermhead4.png" alt="kermhead4"></div>
+    <!--- <div class="kermhead4"><img src= "images/kermhead4.png" alt="kermhead4"></div> --->
     <div class="kermhead5"><img src= "images/kermhead5.png" alt="kermhead5"></div>
     </div>
   <div class="content">
@@ -40,6 +46,13 @@
   $('.kermhead2').hover(function(){
           $('.kermhead2').toggleClass('hvr-pulse')
         })
+  $('.kermhead3').hover(function(){
+          $('.kermhead3').toggleClass('hvr-buzz')
+        })
+  $('.kermhead5').hover(function(){
+          $('.kermhead5').toggleClass('hvr-wobble-horizontal')
+        })
+
   </script>
 
 </body>

@@ -15,7 +15,10 @@
 <body class="homepage">
 
 	<header>
-		<h1>Jenna's Dogs</h1>
+		<div class="tooltip"><h1>Jenna's Dogs</h1>
+  <span class="tooltiptext"><p>Jenna Marbles is a Youtuber with four cute dogs</p></span>
+</div>
+		<!--<h1>Jenna's Dogs</h1>-->
 	</header>
 
 	<main>
@@ -48,13 +51,13 @@
 	          $('.marblehead').toggleClass('kermywiggle')
 	        })
 			$('.kermithead').hover(function(){
-			      $('.kermithead').toggleClass('kermywiggle')
+			      $('.kermithead').toggleClass('hvr-buzz')
 			     })
 			$('.peachhead').hover(function(){
-		 			  $('.peachhead').toggleClass('kermywiggle')
+		 			  $('.peachhead').toggleClass('hvr-wobble-vertical')
 		 			 })
 			$('.bunnyhead').hover(function(){
-		 			   $('.bunnyhead').toggleClass('kermywiggle')
+		 			   $('.bunnyhead').toggleClass('hvr-pulse')
 		 			 })
 $(function(){
 			       $("#marblehead").on({
