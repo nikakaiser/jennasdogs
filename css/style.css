@@ -9,6 +9,7 @@ h1 {
 	font-size: 60px;
 	font-family: 'Coiny', cursive;
 	padding-right: 30px;
+	margin-top: 30px;
 	text-align: right;
 }
 
@@ -31,48 +32,43 @@ img {
 	justify-content: center;
 	align-items: center;
 	grid-template-columns: repeat(4, 1fr);
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 img .dogheads {
 	vertical-align: center;
 }
-
+.homepage .marblehead {
+	margin-top: -200px;
+	margin-left: 20px;
+	margin-right: -20px;
+}
+.homepage .peachhead {
+	margin-top: -150px;
+}
+.homepage .kermithead {
+	margin-top: 50px;
+	margin-left: 25px;
+	margin-right: -25px;
+}
 .homebutton {
 	position: absolute;
 	top: 40px;
 	left: 40px;
 	width: 40px;
+	z-index: 2;
 }
-
+#homebutton:hover {
+	fill: #000000;
+}
 .homepage {
 	background-color: rgb(235,204,93);
 }
 
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 200px;
-  background-color: black;
-  color: #fff;
-  text-align: left;
-  padding: 10px;
-  border-radius: 6px;
-
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.homepage #jennahead{
+	height: 50px;
+	width: auto;
+	margin-left: 30px;
 }
 
 @media only screen and (min-width:768px) {}
@@ -117,15 +113,20 @@ img .dogheads {
 	grid-template-columns: 1fr 1fr;
 }
 
-.kermhead5 {
-	margin-top: -100px;
+.kermhead6 {
+	margin-top: 50px;
 }
 .kermhead2{
 	margin-top: 20px;
+	margin-left: 30px;
 }
-.kermhead1{
-/*	margin-top: -50px;*/
+.kermhead3 {
+	margin-top: 20px;
 }
+/*.kermhead1{
+	margin-top: -50px;
+}*/
+
 .kermywiggle {
 	animation-name: wiggle;
 	animation-duration: 3s;
@@ -173,12 +174,58 @@ img .dogheads {
 	margin-left: 20px;
 }
 /* VIDEO PAGE */
+.videos {
+	background-color: rgb(235,204,93);
+}
 .videogrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	margin: 50px;
 	grid-gap: 50px;
+	justify-content: space-evenly;
+	align-items: center;
+	justify-items: center;
+}
+.videos h1 {
+	margin-top: 20px;
 }
 
+.videogrid p {
+	line-height: 1.5;
+}
+.jenna{
+		background-color: rgb(235,204,93);
+}
+.jennagrid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 50px;
+}
+.jennaheads {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.jennaheads img{
+	width: 75%;
+}
+.jennahead5 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.jennahead3 {
+	margin-top: -80px;
+}
+.jennahead2 {
+	margin-top: 20px;
+}
+.jennahead4{
+	margin-left: 50px;
+}
+#downarrow {
+	height: 90px;
+	width:auto;
+	margin-left: -10px;
+}
 /* ANIMATIONS */
 @keyframes wiggle {
 	0% { transform: rotate(0deg); }
@@ -400,6 +447,36 @@ img .dogheads {
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
