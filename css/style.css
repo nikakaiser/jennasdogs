@@ -113,8 +113,9 @@ img .dogheads {
 	grid-template-columns: 1fr 1fr;
 }
 
-.kermhead6 {
-	margin-top: 50px;
+.kermhead1 {
+	margin-top: -20px;
+	margin-left: 40px;
 }
 .kermhead2{
 	margin-top: 20px;
@@ -122,6 +123,9 @@ img .dogheads {
 }
 .kermhead3 {
 	margin-top: 20px;
+}
+.kermhead4 {
+	margin-top: -50px;
 }
 /*.kermhead1{
 	margin-top: -50px;
