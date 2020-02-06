@@ -14,7 +14,7 @@
 <body class="jenna">
 
   <div class="homebutton"><a href="index.html">
-    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home button.svg">
+    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home-button-white.svg">
   </a></div>
 <div class="jennagrid">
   <div class="jennaheads">
@@ -61,17 +61,26 @@
   <script>
   $('.jennahead4').hover(function(){
           $('.jennahead4').toggleClass('kermywiggle')
-        })
+        });
   $('.jennahead2').hover(function(){
           $('.jennahead2').toggleClass('hvr-pulse')
-        })
+        });
   $('.jennahead3').hover(function(){
           $('.jennahead3').toggleClass('hvr-buzz')
-        })
+        });
   $('.jennahead5').hover(function(){
           $('.jennahead5').toggleClass('hvr-wobble-horizontal')
-        })
-
+        });
+  $(function(){
+              			  $("#homebutton").on({
+              			        mouseenter: function(){
+              			         $(this).attr('src','images/svg/home-button-black.svg');
+              			       },
+              			       mouseleave: function(){
+              			         $(this).attr('src','images/svg/home-button-white.svg');
+              			       },
+              			       });
+              });
   </script>
 
 </body>

@@ -14,7 +14,7 @@
 <body class="peach">
 
   <div class="homebutton"><a href="index.html">
-    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home button.svg">
+    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home-button-white.svg">
   </a></div>
 
   <div class="peachheads">
@@ -44,16 +44,27 @@
   <script>
   $('.peachhead4').hover(function(){
           $('.peachhead4').toggleClass('kermywiggle')
-        })
+        });
   $('.peachhead2').hover(function(){
           $('.peachhead2').toggleClass('hvr-pulse')
-        })
+        });
   $('.peachhead3').hover(function(){
           $('.peachhead3').toggleClass('hvr-buzz')
-        })
+        });
   $('.peachhead5').hover(function(){
           $('.peachhead5').toggleClass('hvr-wobble-horizontal')
-        })
+        });
+  $(function(){
+              			  $("#homebutton").on({
+              			        mouseenter: function(){
+              			         $(this).attr('src','images/svg/home-button-black.svg');
+              			       },
+              			       mouseleave: function(){
+              			         $(this).attr('src','images/svg/home-button-white.svg');
+              			       },
+              			       });
+              });
+
 
   </script>
 

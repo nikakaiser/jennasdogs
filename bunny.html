@@ -14,7 +14,7 @@
 <body class="bunny">
 
   <div class="homebutton"><a href="index.html">
-    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home button.svg">
+    <img id = "homebutton" alt = "homebutton" src = "images/SVG/home-button-white.svg">
   </a></div>
 
   <div class="bunnyheads">
@@ -44,16 +44,26 @@
   <script>
   $('.bunnyhead4').hover(function(){
           $('.bunnyhead4').toggleClass('kermywiggle')
-        })
+        });
   $('.bunnyhead2').hover(function(){
           $('.bunnyhead2').toggleClass('hvr-pulse')
-        })
+        });
   $('.bunnyhead3').hover(function(){
           $('.bunnyhead3').toggleClass('hvr-buzz')
-        })
+        });
   $('.bunnyhead5').hover(function(){
           $('.bunnyhead5').toggleClass('hvr-wobble-horizontal')
-        })
+        });
+  $(function(){
+              			  $("#homebutton").on({
+              			        mouseenter: function(){
+              			         $(this).attr('src','images/svg/home-button-black.svg');
+              			       },
+              			       mouseleave: function(){
+              			         $(this).attr('src','images/svg/home-button-white.svg');
+              			       },
+              			       });
+              });
 
   </script>
 
